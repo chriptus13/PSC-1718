@@ -1,0 +1,4 @@
+libfut.so: fut.o
+	gcc -shared -o libfut.so fut.o
+fut.o: fut.c
+	gcc -fPIC -c -Wall fut.c
